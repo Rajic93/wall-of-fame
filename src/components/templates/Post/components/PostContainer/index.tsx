@@ -53,6 +53,7 @@ const PostContainer = ({
     }
 
     const onDelete = () => recordId && deletePost(recordId);
+    console.log({ mode })
 
     return (
         <Col
@@ -74,7 +75,7 @@ const PostContainer = ({
                 {id && typeof componentRenderer === 'function'
                     ? componentRenderer({ postId: id, onLoad: () => setIsLoading(false) })
                     : null}
-                {useLoading && isLoading ? (
+                {mode !== PostModes.CREATE && useLoading && isLoading ? (
                     <div
                         className="post-loader"
                     >
