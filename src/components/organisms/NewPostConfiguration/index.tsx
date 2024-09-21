@@ -113,7 +113,6 @@ const NewPostConfiguration = ({
                                     ...step,
                                     title: step?.type !== PostFormStep.SLOT_STEP ? step.title : (index === 3 ? step.title : ''),
                                 }))}
-                            onChange={handleOnStepClick}
                             style={{ width: step?.type !== PostFormStep.SLOT_STEP ? 300 : 'fit-content' }}
                         />
                         {step.type === PostFormStep.SIZE_STEP ? (
@@ -170,11 +169,9 @@ const NewPostConfiguration = ({
                         <Steps
                             size="small"
                             direction={step?.type !== PostFormStep.SLOT_STEP ? "vertical" : "horizontal"}
-                            current={step?.type}
-                            items={steps.map((step, index) => ({
-                                ...step,
-                                title: step?.type !== PostFormStep.SLOT_STEP ? step.title : (index === 3 ? step.title : ''),
-                            }))}
+                            current={step?.type - 1}
+                            items={steps
+                                .filter(({ type }) => type !== PostFormStep.NONE)}
                             onChange={step?.type === PostFormStep.SLOT_STEP ? handleOnStepClick : undefined}
                             style={{ width: 'fit-content',  padding: 20, backgroundColor: 'white', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', border: '1px solid #d0d0d0'  }}
                         />

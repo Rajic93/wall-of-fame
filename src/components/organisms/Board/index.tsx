@@ -109,7 +109,7 @@ const BoardPage = ({ id }: BoardPageProps) => {
                             <EmptySlot
                                 key={index}
                                 size={state.cellSize}
-                                onSelect={() => isCreationMode && actions?.setSelectedCells([index])}
+                                onSelect={() => state.postFormStep === PostFormStep.SLOT_STEP && actions?.setSelectedCells([index])}
                                 isSelected={cell.isSelected}
                                 shouldShow={state.postFormStep !== PostFormStep.NONE}
                             />

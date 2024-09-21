@@ -53,7 +53,6 @@ const PostContainer = ({
     }
 
     const onDelete = () => recordId && deletePost(recordId);
-    console.log({ mode })
 
     return (
         <Col
