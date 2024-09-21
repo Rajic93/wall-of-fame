@@ -1,0 +1,50 @@
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+.post-container {
+    background-color: transparent !important;
+}
+.post-container--scaled {
+    background-color: transparent !important;
+    transform: scale(0.5) translateY(-300px);
+}
+
+.post-container div {
+    background-color: transparent;
+}
+.post-container div .twitter-tweet {
+    margin-top: 0 !important;
+    box-shadow: var(--wof-card-box-shadow);
+    border-radius: var(--wof-container-border-radius) !important;
+}
+.post-container--flat div .twitter-tweet {
+    margin-top: var(--wof-container-margin) !important;
+    box-shadow: none;
+}
+
+.post-menu {
+    position: absolute;
+    top: 7px;
+    right: 50px;
+    background-color: transparent;
+}
+
+.post-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-loader span {
+    font-size: var(--wof-btn-font-size-large);
+    display: inline-block;
+    margin-top: calc(5 * var(--wof-margin-large));
+}

@@ -1,0 +1,22 @@
+.empty-slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+}
+
+.empty-slot--visible {
+    background-color: var(--wof-color-success-100) !important;
+    opacity: 0.7;
+    border: 1px dashed var(--wof-color-primary-dark-100) !important;
+    cursor: pointer;
+}
+
+.empty-slot--visible:hover {
+    background-color: var(--wof-color-success-300) !important;
+}
+
+.empty-slot--selected {
+    background-color: var(--wof-color-success-300) !important;
+}

@@ -1,0 +1,16 @@
+.boards-container {
+    cursor: pointer;
+}
+
+.boards-card {
+    width: 100%;
+    box-shadow: var(--wof-card-box-shadow);
+}
+
+.boards-title {
+    margin-bottom: var(--wof-margin-small);
+}
+
+.boards-card span {
+    display: inline-block;
+}

@@ -1,0 +1,19 @@
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: var(--wof-btn-bg-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--wof-btn-padding);
+    border-radius: var(--wof-btn-border-radius);
+    z-index: var(--wof-z-index-l-1);
+    cursor: pointer;
+    box-shadow: var(--wof-btn-box-shadow);
+}
+
+.back-button span {
+    font-size: var(--wof-btn-font-size-medium);
+    color: var(--wof-btn-font-color-dark);
+}

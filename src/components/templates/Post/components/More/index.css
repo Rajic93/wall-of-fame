@@ -1,0 +1,42 @@
+.more {
+    position: relative;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.more span {
+    font-size: var(--wof-btn-font-size-medium);
+}
+
+.more_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--wof-z-index-l-2);
+}
+
+.more_delete {
+    position: absolute;
+    width: fit-content;
+    background-color: var(--wof-color-primary-light-100);
+    padding: var(--wof-container-padding);
+    border: 1px solid var(--wof-color-primary-light-300);
+    border-radius: var(--wof-menu-border-radius);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    z-index: var(--wof-z-index-l-1);
+    box-shadow: var(--wof-menu-box-shadow);
+}
+
+.more .more_delete span {
+    font-size: var(--wof-btn-font-size-small);
+    margin-left: var(--wof-margin-small);
+    display: inline-block;
+}

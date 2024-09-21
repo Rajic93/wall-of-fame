@@ -1,3 +1,64 @@
+:root {
+    /* Colors */
+    --wof-color-primary-light-100: #ffffff;
+    --wof-color-primary-light-200: #f4f2ee;
+    --wof-color-primary-light-300: #d5d2d2;
+    --wof-color-primary-dark-100: gray;
+    --wof-color-primary-dark-300: #23272F;
+    --wof-color-primary-dark-500: #111111;
+    --wof-color-success-100: #ddffbe;
+    --wof-color-success-300: #6f9a40;
+    --wof-color-danger-300: mediumvioletred;
+    --wof-margin-small: 10px;
+    --wof-margin-medium: 15px;
+    --wof-margin-large: 20px;
+    /* Z-Index */
+    --wof-z-index-l-1: 9999;
+    --wof-z-index-l-2: 9998;
+    --wof-z-index-l-3: 9997;
+    --wof-z-index-l-4: 9996;
+    --wof-z-index-l-5: 9995;
+    --wof-z-index-l-6: 9994;
+    --wof-z-index-l-7: 9993;
+    --wof-z-index-l-8: 9992;
+    --wof-z-index-l-9: 9991;
+    --wof-z-index-l-10: 9990;
+    /* Fonts */
+    --wof-font-family-primary: "Open Sans", sans-serif;
+    /* Buttons */
+    --wof-btn-bg-color-dark: var(--wof-color-primary-dark-300);
+    --wof-btn-font-color-light: var(--wof-color-primary-light-100);
+    --wof-btn-bg-color-light: var(--wof-color-primary-light-100);
+    --wof-btn-font-color-dark: var(--wof-color-primary-dark-300);
+    --wof-btn-padding: 10px;
+    --wof-btn-border-radius: 5px;
+    --wof-btn-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --wof-btn-font-size-small: 14px;
+    --wof-btn-font-size-medium: 24px;
+    --wof-btn-font-size-large: 32px;
+    --wof-btn-font-size-xlarge: 48px;
+    --wof-btn-cursor: pointer;
+    --wof-btn-margin: 10px;
+    /* Containers */
+    --wof-container-padding: 10px;
+    --wof-container-margin: 20px;
+    --wof-container-border-radius: 15px;
+    /* Cards */
+    --wof-card-padding: 20px;
+    --wof-card-box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.2);
+    /* Menu */
+    --wof-menu-border-radius: 5px;
+    --wof-menu-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    font-family: var(--wof-font-family-primary), "Open Sans", sans-serif !important;
+}
+
 body #root {
     width: fit-content;
+}
+
+html {
+    background-color: var(--wof-color-primary-light-200);
 }

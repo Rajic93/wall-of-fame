@@ -1,0 +1,24 @@
+.controls {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: var(--wof-z-index-l-1);
+    background-color: var(--wof-btn-bg-color-light);
+    padding: var(--wof-btn-padding);
+    border-radius: var(--wof-btn-border-radius);
+    box-shadow: var(--wof-btn-box-shadow);
+}
+
+.controls span {
+    font-size: var(--wof-btn-font-size-medium);
+    color: var(--wof-btn-font-color-dark);
+    cursor: var(--wof-btn-cursor);
+    margin-bottom: var(--wof-btn-margin);
+}
+
+.controls span:last-child {
+    margin-bottom: 0;
+}

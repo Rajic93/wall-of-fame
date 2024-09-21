@@ -1,0 +1,18 @@
+.signin-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: var(--wof-z-index-l-1);
+    background-color: white;
+    padding: var(--wof-container-padding);
+    border-radius: var(--wof-menu-border-radius);
+    text-align: center;
+    box-shadow: var(--wof-menu-box-shadow);
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin-icon span {
+    font-size: var(--wof-btn-font-size-small);
+}

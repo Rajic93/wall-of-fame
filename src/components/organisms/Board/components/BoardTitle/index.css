@@ -1,0 +1,17 @@
+.board-title {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 9998;
+}
+.board-title h3 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+}

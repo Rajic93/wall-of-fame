@@ -1,0 +1,7 @@
+.slot-configuration {
+    padding: var(--wof-card-padding);
+}
+
+.size-step-radio {
+    width: 150px;
+}

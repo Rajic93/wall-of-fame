@@ -1,0 +1,31 @@
+.board {
+    width: fit-content;
+    display: grid;
+    padding: var(--wof-container-padding);
+    margin: var(--wof-container-margin);
+    grid-template-columns: repeat(50, minmax(300px, 1fr));
+    grid-template-rows: repeat(20, minmax(300px, 1fr));
+    gap: 40px;
+    transition: all 0.6s ease-in-out;
+    transform-origin: top left;
+    position: relative;
+}
+
+.span-1x2 {
+    grid-column: span 2;
+}
+
+.span-2x1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.span-2x2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.span-4x4 {
+    grid-column: span 4;
+    grid-row: span 4;
+}
