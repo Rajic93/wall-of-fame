@@ -6,7 +6,6 @@ export type XProps = Omit<PostContainerProps, 'componentRenderer' | 'inputParser
 const XPost = (props: XProps) => {
     const inputParser = (value: string) => {
         // TODO: parse id from string
-        console.log('asdasd')
         return value;
     };
 

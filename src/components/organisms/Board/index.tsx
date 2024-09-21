@@ -73,7 +73,6 @@ const BoardPage = ({ id }: BoardPageProps) => {
                 .then((newPosts) => actions.setUsedItems(newPosts as PostItem[]));
         }
     };
-    console.log(Boolean(isCreationModeEnabled && isCreationMode),{ isCreationMode, isCreationModeEnabled})
 
     return (
         <BoardContext.Provider value={context}>

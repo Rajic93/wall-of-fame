@@ -43,7 +43,6 @@ const usePosts = () => {
 
     const savePost = (post: PostItem) =>
         new Promise(async (resolve, reject) => {
-            console.log({ post })
             if (post.type === PostTypes.POSTER && !post.file) {
                 return reject(new Error('File is not provided.'));
             }
